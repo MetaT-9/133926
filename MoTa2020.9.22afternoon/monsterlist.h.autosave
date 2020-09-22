@@ -1,0 +1,26 @@
+#ifndef MONSTERLIST_H
+#define MONSTERLIST_H
+
+#include <QListWidget>
+#include <QPalette>
+
+class MonsterList: public QListWidget
+{
+    Q_OBJECT
+public:
+    MonsterList();
+};
+
+#endif // MONSTERLIST_H
+
+
+
+public:
+    explicit MonsterInfoList(QListWidget *person=0);
+    //void Init();
+    QListWidgetItem *currentItem; //当前的项
+    void addItem(int monster_id); //在列表中新加一项
+
+private:
+    int item_index;
+};
